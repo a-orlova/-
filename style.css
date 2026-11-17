@@ -1,0 +1,71 @@
+:root{--bg:#fff;--ink:#14213d;--mut:#55627a;--blue:#1d4ed8;--soft:#eef3ff;--line:#d6def0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:16px/1.55 "Golos Text",system-ui,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.top{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between;padding:12px 24px;background:#fff;border-bottom:1px solid var(--line)}
+.brand{font-weight:700;color:var(--ink);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+nav a{color:var(--mut);text-decoration:none;font-size:15px;padding:2px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{color:var(--blue);border-color:var(--blue)}
+main{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+.hero{padding-top:56px}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:0 0 16px;max-width:16em}
+h2{font-size:clamp(24px,3.4vw,32px);margin:0 0 10px}
+h3{font-size:18px;margin:32px 0 12px;color:var(--blue)}
+h4{margin:0 0 6px;font-size:16px}
+p{margin:0 0 12px;max-width:68ch}
+.def{font-size:18px}
+.note{color:var(--mut);font-size:15px}
+.classes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:28px}
+.classes a{display:block;padding:16px;background:var(--blue);color:#fff;text-decoration:none;border-radius:6px}
+.classes a:hover{background:#1e40af}
+.classes b{display:block;font-size:19px}
+.classes span{font-size:14px;opacity:.9}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:var(--soft);border-left:4px solid var(--blue);padding:14px 16px;border-radius:4px}
+.card p{margin:0;font-size:15px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+figure{margin:0}
+figure.wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(260px,1.2fr) 1fr;gap:20px;align-items:start}
+figure img,.ph{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--soft);border-radius:4px;display:block}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:var(--mut);font-size:14px}
+figcaption{font-size:14px;color:var(--mut);margin-top:8px}
+figcaption b{color:var(--ink)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:700}
+#qbox{max-width:680px}
+.q{font-weight:700;margin:0 0 12px}
+.opt{display:block;width:100%;text-align:left;font:inherit;padding:10px 14px;margin:0 0 8px;border:1px solid var(--line);background:#fff;border-radius:4px;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--blue)}
+.opt.ok{background:#e6f6ec;border-color:#2e9e5b}
+.opt.bad{background:#fdecec;border-color:#d64545}
+.fb{color:var(--mut);font-size:15px;min-height:24px}
+.btn{font:inherit;padding:10px 20px;background:var(--blue);color:#fff;border:0;border-radius:4px;cursor:pointer}
+.bar{height:6px;background:var(--soft);border-radius:3px;margin-bottom:16px}
+.bar i{display:block;height:100%;background:var(--blue);border-radius:3px;transition:width .3s}
+ol{padding-left:22px}
+li{margin-bottom:6px;font-size:15px;overflow-wrap:anywhere}
+footer{text-align:center;padding:24px;color:var(--mut);font-size:14px}
+@media(max-width:700px){figure.wide{grid-template-columns:1fr}.top{padding:10px 16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}}
+svg.sch{width:100%;min-width:680px;height:auto;display:block}
+.sb rect,rect.sb,ellipse.sb{fill:#fff;stroke:#1d4ed8;stroke-width:1.5}
+.sc,.sc rect{fill:#1d4ed8}
+.sl{stroke:#9db4ee;stroke-width:2;fill:none}
+.st{font:14px "Golos Text",system-ui,sans-serif;fill:#14213d}
+.st.sw,.sw{fill:#fff}
+.ic{width:100%;max-width:130px;height:auto;display:block;margin:0 0 8px;stroke:#1d4ed8;stroke-width:2;fill:#cfdcff}
+.ic path{fill:none}
+/* центрирование */
+h1,h2,main h3,.def,.note,.hero>p{text-align:center}
+p{margin-left:auto;margin-right:auto}
+h1{margin-left:auto;margin-right:auto}
+#qbox{margin:0 auto;text-align:center}
+.opt{text-align:center}
+#src ol{max-width:860px;margin:0 auto}
+figure:not(.wide) figcaption{text-align:center}

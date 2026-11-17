@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Классификация беспилотных систем</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a href="#top" class="brand">Защита и действия человека в условиях чрезвычайных ситуаций</a>
+  <nav>
+    <a href="#air">Воздушные</a><a href="#ground">Наземные</a><a href="#surface">Надводные</a><a href="#under">Подводные</a><a href="#quiz">Тест</a><a href="#src">Источники</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <h1>Классификация беспилотных систем</h1>
+  <p class="note">Орлова Алена Александровна, ису: 409280</p>
+  <p>Беспилотная система — это аппарат без экипажа на борту, пульт или станция управления и канал связи между ними. По среде, в которой работает аппарат, системы делятся на четыре класса.</p>
+  <div class="classes">
+    <a href="#air"><b>Воздушные</b><span>БПЛА</span></a>
+    <a href="#ground"><b>Наземные</b><span>БНС, UGV</span></a>
+    <a href="#surface"><b>Надводные</b><span>БЭК, USV</span></a>
+    <a href="#under"><b>Подводные</b><span>ROV, AUV</span></a>
+  </div>
+
+  <h3>Схема классификации</h3>
+  <div class="tw"><svg class="sch" viewBox="0 0 960 320" role="img" aria-label="Схема классификации беспилотных систем">
+    <path class="sl" d="M480 48V68M120 68H840M120 68V90M360 68V90M600 68V90M840 68V90M120 130V308M360 130V266M600 130V266M840 130V266"/>
+    <rect class="sc" x="370" y="8" width="220" height="40" rx="4"/><text class="st sw" x="480" y="33" text-anchor="middle">Беспилотные системы</text>
+    <g class="sc"><rect x="20" y="90" width="200" height="40" rx="4"/><rect x="260" y="90" width="200" height="40" rx="4"/><rect x="500" y="90" width="200" height="40" rx="4"/><rect x="740" y="90" width="200" height="40" rx="4"/></g>
+    <g class="st sw" text-anchor="middle"><text x="120" y="115">Воздушные</text><text x="360" y="115">Наземные</text><text x="600" y="115">Надводные</text><text x="840" y="115">Подводные</text></g>
+    <g class="sb"><rect x="20" y="150" width="200" height="32" rx="4"/><rect x="20" y="192" width="200" height="32" rx="4"/><rect x="20" y="234" width="200" height="32" rx="4"/><rect x="20" y="276" width="200" height="32" rx="4"/>
+    <rect x="260" y="150" width="200" height="32" rx="4"/><rect x="260" y="192" width="200" height="32" rx="4"/><rect x="260" y="234" width="200" height="32" rx="4"/>
+    <rect x="500" y="150" width="200" height="32" rx="4"/><rect x="500" y="192" width="200" height="32" rx="4"/><rect x="500" y="234" width="200" height="32" rx="4"/>
+    <rect x="740" y="150" width="200" height="32" rx="4"/><rect x="740" y="192" width="200" height="32" rx="4"/><rect x="740" y="234" width="200" height="32" rx="4"/></g>
+    <g class="st" text-anchor="middle"><text x="120" y="171">Мультироторные</text><text x="120" y="213">Самолётного типа</text><text x="120" y="255">Вертолётные</text><text x="120" y="297">Гибридные (VTOL)</text>
+    <text x="360" y="171">Колёсные</text><text x="360" y="213">Гусеничные</text><text x="360" y="255">Шагающие</text>
+    <text x="600" y="171">Малые катера</text><text x="600" y="213">Парусные платформы</text><text x="600" y="255">Крупные суда</text>
+    <text x="840" y="171">ROV (по кабелю)</text><text x="840" y="213">AUV (автономные)</text><text x="840" y="255">Глайдеры</text></g>
+  </svg></div>
+
+  <h3>Из чего состоит беспилотная система</h3>
+  <div class="tw"><svg class="sch" viewBox="0 0 960 190" role="img" aria-label="Состав беспилотной системы">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1d4ed8"/></marker></defs>
+    <path class="sl" d="M230 85H370M590 85H730" marker-start="url(#ar)" marker-end="url(#ar)"/>
+    <g class="sb"><rect x="20" y="30" width="210" height="110" rx="6"/><rect x="370" y="30" width="220" height="110" rx="6"/><rect x="730" y="30" width="210" height="110" rx="6"/></g>
+    <g class="st" text-anchor="middle"><text x="125" y="62" font-weight="700">Аппарат</text><text x="125" y="88">двигатель и движитель</text><text x="125" y="108">навигация, автопилот</text><text x="125" y="128">полезная нагрузка</text>
+    <text x="480" y="62" font-weight="700">Канал связи</text><text x="480" y="88">радио, спутник</text><text x="480" y="108">кабель (ROV)</text><text x="480" y="128">гидроакустика (под водой)</text>
+    <text x="835" y="62" font-weight="700">Пункт управления</text><text x="835" y="88">оператор</text><text x="835" y="108">программа миссии</text><text x="835" y="128">приём видео и данных</text></g>
+  </svg></div>
+</section>
+
+<section id="air">
+  <h2>Воздушные системы (БПЛА)</h2>
+  <p class="def">Беспилотный летательный аппарат управляется оператором дистанционно или летит по заданной программе. Устройства классифицируют по конструкции, массе и дальности.</p>
+
+  <h3>По конструкции</h3>
+  <div class="grid4">
+    <div class="card"><svg class="ic" viewBox="0 0 100 60" aria-hidden="true"><path d="M25 12L75 48M75 12L25 48" stroke-width="4"/><circle cx="25" cy="12" r="9"/><circle cx="75" cy="12" r="9"/><circle cx="25" cy="48" r="9"/><circle cx="75" cy="48" r="9"/><circle cx="50" cy="30" r="7"/></svg><h4>Мультироторные</h4><p>- Несколько винтов (чаще четыре) <br>- Вертикальный взлёт, зависание <br>- Малая дальность и время полёта</p></div>
+    <div class="card"><svg class="ic" viewBox="0 0 100 60" aria-hidden="true"><ellipse cx="50" cy="30" rx="42" ry="5"/><rect x="38" y="8" width="12" height="44" rx="3"/><rect x="78" y="19" width="8" height="22" rx="2"/></svg><h4>Самолётного типа</h4><p>- Неподвижное крыло<br>- Дальше и дольше, чем мультироторы, но нужен разгон: катапульта, пусковая установка или ВПП</p></div>
+    <div class="card"><svg class="ic" viewBox="0 0 100 60" aria-hidden="true"><ellipse cx="38" cy="30" rx="18" ry="9"/><path d="M56 30H92" stroke-width="3"/><circle cx="92" cy="30" r="4"/><circle cx="38" cy="30" r="26" fill="none" stroke-dasharray="4 3"/></svg><h4>Вертолётные</h4><p>- Один несущий винт <br>- Больше полезной нагрузки, но сложнее конструкция и обслуживание</p></div>
+    <div class="card"><svg class="ic" viewBox="0 0 100 60" aria-hidden="true"><ellipse cx="50" cy="30" rx="42" ry="4"/><rect x="42" y="12" width="10" height="36" rx="3"/><circle cx="30" cy="10" r="6"/><circle cx="30" cy="50" r="6"/><circle cx="66" cy="10" r="6"/><circle cx="66" cy="50" r="6"/></svg><h4>Гибридные (VTOL)</h4><p>- Вертикальный взлёт и посадка, в полёте — как самолёт<br>- Сочетают плюсы обоих типов</p></div>
+  </div>
+
+  <h3>По типу двигателя</h3>
+  <div class="grid4">
+    <div class="card"><h4>Электрический</h4><p>- Аккумулятор и электромоторы<br>- Тихо и просто, но полёт обычно ограничен десятками минут</p></div>
+    <div class="card"><h4>Поршневой ДВС</h4><p>- Бензин, воздушный винт<br>- Больше дальность и время полёта, но шум и вибрация</p></div>
+    <div class="card"><h4>Газотурбинный</h4><p>- Турбовинтовые и турбореактивные<br>- Для тяжёлых и скоростных аппаратов</p></div>
+  </div>
+
+  <h3>По способу управления</h3>
+  <div class="grid4">
+    <div class="card"><h4>Дистанционное</h4><p>- Оператор управляет в реальном времени, в том числе по видео с борта (FPV)</p></div>
+    <div class="card"><h4>По программе</h4><p>- Аппарат летит по заданным точкам<br>- При потере связи может вернуться к месту старта</p></div>
+    <div class="card"><h4>Автономное</h4><p>- Решения принимает бортовая система без постоянной команды оператора</p></div>
+  </div>
+
+  <h3>По массе</h3>
+  <div class="tw"><svg class="sch" viewBox="0 0 960 170" role="img" aria-label="Классы БПЛА по массе">
+    <g class="sc"><rect x="20" y="10" width="480" height="40" rx="4"/><rect x="510" y="10" width="210" height="40" rx="4"/><rect x="730" y="10" width="210" height="40" rx="4"/></g>
+    <g class="st sw" text-anchor="middle"><text x="260" y="35">Class I: до 150 кг</text><text x="615" y="35">Class II: 150–600 кг</text><text x="835" y="35">Class III: свыше 600 кг</text></g>
+    <g class="sb"><rect x="20" y="60" width="156" height="34" rx="4"/><rect x="182" y="60" width="156" height="34" rx="4"/><rect x="344" y="60" width="156" height="34" rx="4"/></g>
+    <g class="st" text-anchor="middle"><text x="98" y="82">Микро: до 2 кг</text><text x="260" y="82">Мини: 2–20 кг</text><text x="422" y="82">Малые: 20–150 кг</text>
+    <text x="98" y="130" font-weight="700">DJI Mavic Air 2</text><text x="98" y="150">570 г</text><text x="835" y="130" font-weight="700">Bayraktar TB2</text><text x="835" y="150">класс MALE</text></g>
+    <path class="sl" d="M98 96V114M835 52V114"/>
+  </svg></div>
+
+  <h3>По дальности</h3>
+  <div class="tw"><table>
+    <tr><th>Класс</th><th>Дальность</th><th>Типичное применение</th></tr>
+    <tr><td>Малой дальности</td><td>до 100 км</td><td>Съёмка, мониторинг, инспекция</td></tr>
+    <tr><td>Средней дальности</td><td>до 500 км</td><td>Разведка и наблюдение на большой территории</td></tr>
+    <tr><td>Большой дальности</td><td>свыше 500 км</td><td>Длительные задачи, дальняя разведка</td></tr>
+  </table></div>
+
+  <h3>Где применяются в гражданской сфере</h3>
+  <div class="grid4">
+    <div class="card"><h4>Мониторинг ЧС</h4><p>- Пожары, паводки, оценка ущерба с воздуха</p></div>
+    <div class="card"><h4>Поиск людей</h4><p>- Тепловизор помогает находить людей в лесу и ночью</p></div>
+    <div class="card"><h4>Картография</h4><p>- Аэрофотосъёмка и трёхмерные модели местности</p></div>
+    <div class="card"><h4>Сельское хозяйство и инспекция</h4><p>- Осмотр полей, линий электропередачи, трубопроводов</p></div>
+  </div>
+
+  <h3>Примеры</h3>
+  <div class="grid3">
+    <figure><img data-f="DJI_-_Drohne_Mavic_Air_2.JPG" alt="DJI Mavic Air 2 в полёте"><figcaption><b>DJI Mavic Air 2</b> — мультироторный, масса 570 г. Съёмка и инспекция.</figcaption></figure>
+    <figure><img data-f="Orlan-10_on_the_launch_catapult.jpg" alt="Орлан-10 на катапульте"><figcaption><b>Орлан-10</b> — самолётного типа, разработка СТЦ (Санкт-Петербург), 2011 г. Разведка, запуск с катапульты.</figcaption></figure>
+    <figure><img data-f="Bayraktar_TB2_Runway.jpg" alt="Bayraktar TB2 на полосе"><figcaption><b>Bayraktar TB2</b> — класс MALE (средняя высота, большая продолжительность), Турция.</figcaption></figure>
+  </div>
+</section>
+
+<section id="ground">
+  <h2>Наземные системы (БНС, UGV)</h2>
+  <p class="def">Наземный робототехнический комплекс движется по суше под управлением оператора или автономно. Главное отличие от воздушных систем — зависимость от рельефа и грунта.</p>
+
+  <h3>По типу двигателя</h3>
+  <div class="grid4">
+    <div class="card"><h4>Электрический</h4><p>- Аккумуляторы, тихая работа, подходит для помещений<br>- Запас хода ограничен ёмкостью батареи</p></div>
+    <div class="card"><h4>ДВС</h4><p>- Бензин или дизель<br>- Большой запас хода и мощность, но шум и тепловой след</p></div>
+    <div class="card"><h4>Гибридный</h4><p>- ДВС и электромотор вместе<br>- Например, THeMIS: дизель плюс электропривод, возможен ход только на электричестве [9]</p></div>
+  </div>
+
+  <h3>По ходовой части</h3>
+  <div class="grid4">
+    <div class="card"><h4>Колёсные</h4><p>- Быстрее и экономичнее на твёрдом покрытии</p></div>
+    <div class="card"><h4>Гусеничные</h4><p>- Проходимость по грязи, снегу, завалам<br>- Выше нагрузка</p></div>
+    <div class="card"><h4>Шагающие</h4><p>- Ходят по лестницам и неровностям<br>- Пока дороже и сложнее</p></div>
+    <div class="card"><h4>Комбинированные</h4><p>- Колёсно-гусеничные и другие гибриды под задачу</p></div>
+  </div>
+
+  <h3>По назначению</h3>
+  <div class="tw"><table>
+    <tr><th>Задача</th><th>Что делает платформа</th></tr>
+    <tr><td>Логистика</td><td>Возит грузы и снаряжение</td></tr>
+    <tr><td>Разведка и наблюдение</td><td>Несёт камеры и датчики в опасную зону</td></tr>
+    <tr><td>Разминирование</td><td>Обследует и обезвреживает опасные предметы вместо человека</td></tr>
+    <tr><td>Спасение и пожаротушение</td><td>Работает в задымлении и на завалах</td></tr>
+  </table></div>
+
+  <h3>По степени автономности</h3>
+  <div class="grid4">
+    <div class="card"><h4>Дистанционно управляемые</h4><p>- Оператор ведёт платформу по видеоканалу</p></div>
+    <div class="card"><h4>Полуавтономные</h4><p>- Едут по маршруту, оператор задаёт цель и вмешивается при необходимости</p></div>
+    <div class="card"><h4>Автономные</h4><p>- Сами строят маршрут и объезжают препятствия по данным датчиков</p></div>
+  </div>
+
+  <h3>Пример</h3>
+  <div class="grid3">
+    <figure class="wide"><img data-f="THeMIS_5th_generation_UGV.jpg" alt="Milrem THeMIS"><figcaption><b>Milrem THeMIS</b> (Эстония) — гусеничная модульная платформа с гибридной силовой установкой. Варианты: грузовая, разведывательная, разминирования. Гражданская версия Multiscope используется со средствами пожаротушения [9, 10].</figcaption></figure>
+  </div>
+</section>
+
+<section id="surface">
+  <h2>Надводные системы (БЭК, USV)</h2>
+  <p class="def">Безэкипажный катер или судно идёт по поверхности воды без экипажа. Ограничения среды: волнение, ветер, ограниченная связь на большом удалении от берега.</p>
+
+  <h3>По назначению</h3>
+  <div class="grid4">
+    <div class="card"><h4>Научные</h4><p>- Океанография, метеонаблюдения, мониторинг среды</p></div>
+    <div class="card"><h4>Гидрографические</h4><p>- Съёмка дна и промеры глубин</p></div>
+    <div class="card"><h4>Охрана акваторий</h4><p>- Патрулирование и наблюдение</p></div>
+    <div class="card"><h4>Специальные</h4><p>- Борьба с минной опасностью, поиск, перевозки</p></div>
+  </div>
+
+  <h3>По типу двигателя</h3>
+  <div class="grid4">
+    <div class="card"><h4>ДВС</h4><p>- Дальность и скорость<br>- Нужен запас топлива</p></div>
+    <div class="card"><h4>Электрический</h4><p>- Тише и проще<br>- Запас хода зависит от батарей</p></div>
+    <div class="card"><h4>Парус и солнечные панели</h4><p>- Энергия ветра и солнца: месяцы в море при небольшой скорости</p></div>
+  </div>
+
+  <h3>Особенности среды</h3>
+  <div class="grid4">
+    <div class="card"><h4>Волнение и ветер</h4><p>- Ограничивают скорость и безопасную работу малых аппаратов</p></div>
+    <div class="card"><h4>Связь</h4><p>- На удалении от берега радиосвязь уступает место спутниковой</p></div>
+    <div class="card"><h4>Расхождение с судами</h4><p>- Аппарат должен обнаруживать другие суда и избегать столкновений</p></div>
+  </div>
+
+  <h3>Пример</h3>
+  <div class="grid3">
+    <figure class="wide"><img data-f="Saildrone_in_2019_NOAA_Arctic_mission.jpg" alt="Saildrone"><figcaption><b>Saildrone</b> (США) — парусная платформа на ветре и солнечных панелях, собирает океанографические и атмосферные данные, рейсы до 12 месяцев [11, 12].</figcaption></figure>
+  </div>
+</section>
+
+<section id="under">
+  <h2>Подводные системы</h2>
+  <p class="def">Необитаемые подводные аппараты работают под водой, где нет радиосвязи и GPS. Поэтому ключевой признак классификации — способ управления.</p>
+
+  <h3>По способу управления</h3>
+  <div class="tw"><table>
+    <tr><th>Тип</th><th>Управление</th><th>Особенности</th></tr>
+    <tr><td>ROV — телеуправляемые</td><td>Оператор через кабель</td><td>Питание и видео по кабелю, манипуляторы, подводные работы и осмотр</td></tr>
+    <tr><td>AUV — автономные</td><td>Программа миссии, без связи в процессе</td><td>Торпедообразный корпус, дальность и скрытность, съёмка дна и поиск</td></tr>
+    <tr><td>Подводные глайдеры</td><td>Автономно, изменением плавучести</td><td>Очень малое энергопотребление, долгие миссии</td></tr>
+  </table></div>
+
+  <h3>Схема: ROV и AUV</h3>
+  <div class="tw"><svg class="sch" viewBox="0 0 960 290" role="img" aria-label="Сравнение ROV и AUV">
+    <rect x="0" y="80" width="960" height="210" fill="#eef3ff"/>
+    <path class="sl" d="M480 10V280" stroke-dasharray="6 5"/>
+    <g class="st" text-anchor="middle" font-weight="700"><text x="240" y="26">ROV: управление по кабелю</text><text x="720" y="26">AUV: автономная миссия</text></g>
+    <path d="M70 50H190L172 80H88z" fill="#fff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text class="st" x="205" y="70">судно-носитель</text>
+    <path class="sl" d="M130 80C130 140 200 165 260 190"/>
+    <rect class="sb" x="260" y="175" width="90" height="36" rx="6"/>
+    <circle cx="560" cy="120" r="4" fill="#1d4ed8"/>
+    <path class="sl" d="M560 120C640 120 650 190 700 190" stroke-dasharray="6 5"/>
+    <text class="st" x="570" y="106">маршрут задан до погружения</text>
+    <ellipse class="sb" cx="760" cy="190" rx="60" ry="18"/>
+    <g class="st" text-anchor="middle"><text x="305" y="198">ROV</text><text x="760" y="195">AUV</text>
+    <text x="240" y="250">питание, видео и команды идут по кабелю</text><text x="240" y="272">оператор управляет в реальном времени</text>
+    <text x="720" y="250">миссия выполняется без кабеля</text><text x="720" y="272">положение: инерциальная навигация и гидроакустика</text></g>
+  </svg></div>
+  <br>
+  <p class="note">Под водой радиоволны быстро затухают и нет GPS, поэтому AUV определяют положение инерциальной навигацией и гидроакустикой (у Bluefin-21 есть система USBL) [13].</p>
+
+  <h3>Где применяются</h3>
+  <div class="grid4">
+    <div class="card"><h4>Поиск</h4><p>- Обследование дна в поисках затонувших объектов и обломков</p></div>
+    <div class="card"><h4>Инспекция</h4><p>- Осмотр опор, трубопроводов, кабелей, гидротехнических сооружений</p></div>
+    <div class="card"><h4>Картографирование</h4><p>- Съёмка рельефа дна гидролокаторами</p></div>
+    <div class="card"><h4>Наука</h4><p>- Измерения в толще воды и подо льдом</p></div>
+  </div>
+
+  <h3>Пример</h3>
+  <div class="grid3">
+    <figure class="wide"><img data-f="Ocean_Shield_deploys_the_Bluefin_21_underwater_vehicle.jpg" data-q="Ocean Shield deploys the Bluefin 21" alt="Bluefin-21 на борту судна Ocean Shield"><figcaption><b>Bluefin-21</b> (США) — торпедообразный AUV с рабочей глубиной до 4500 м, в апреле 2014 г. применялся в поисках рейса MH370. На фото аппарат на борту судна Ocean Shield [13, 14].</figcaption></figure>
+  </div>
+</section>
+
+<section id="cmp">
+  <h2>Сравнение классов</h2>
+  <div class="tw"><table>
+    <tr><th>Класс</th><th>Среда</th><th>Преимущество</th><th>Ограничение</th></tr>
+    <tr><td>Воздушные</td><td>Воздух</td><td>Скорость, обзор</td><td>Время полёта, погода</td></tr>
+    <tr><td>Наземные</td><td>Суша</td><td>Грузоподъёмность</td><td>Рельеф и проходимость</td></tr>
+    <tr><td>Надводные</td><td>Вода (поверхность)</td><td>Долгие автономные рейсы</td><td>Волнение, дальность связи</td></tr>
+    <tr><td>Подводные</td><td>Под водой</td><td>Доступ к глубине</td><td>Нет радиосвязи и GPS</td></tr>
+  </table></div>
+</section>
+
+<section id="quiz">
+  <h2>Проверьте себя</h2>
+  <div id="qbox"></div>
+</section>
+
+<section id="src">
+  <h2>Источники</h2>
+  <ol>
+    <li>Чащина Е. В. Обзор использования беспилотных летательных аппаратов для экологического мониторинга // Экологическая безопасность в техносферном пространстве: материалы Третьей Международной научно-практической конференции. Екатеринбург: РГППУ, 2020. С. 197–200. <a href="https://elar.rsvpu.ru/bitstream/123456789/31645/1/978-5-8050-0697-6_2020_041.pdf">elar.rsvpu.ru</a></li>
+    <li>Бокарев М. А., Сафонова С. С. Физиолого-гигиеническая оценка условий труда операторов БпЛА // Военная медицина. 2025. № 3. <a href="https://www.bsmu.by/upload/docs/universitet/izdaniya/voen-medicina/2025/2025-3/4.pdf">bsmu.by</a></li>
+    <li>Комаров А. О., Скворцова М. А., Орешкова О. В. Автономная визуальная навигация бортовой системы беспилотного летательного аппарата // Политехнический молодёжный журнал МГТУ им. Н. Э. Баумана. 2017. № 6. DOI: 10.18698/2541-8009-2017-6-110. <a href="https://library.bmstu.ru/Catalog/Details/604952">library.bmstu.ru</a></li>
+    <li>Скачек Р. В. Классификация БЛА, используемых для целей криминалистики. <a href="https://elib.bsu.by/bitstream/123456789/233475/1/53-56.pdf">elib.bsu.by</a></li>
+    <li>Maddalon J. M. и др. Perspectives on Unmanned Aircraft Classification for Civil Airworthiness Standards. NASA/TM-2013-217969, 2013. Таблица 30: NATO Classification. <a href="https://ntrs.nasa.gov/api/citations/20130010930/downloads/20130010930.pdf">ntrs.nasa.gov</a></li>
+    <li>Орлан-10. Википедия. <a href="https://ru.wikipedia.org/wiki/Орлан-10">ru.wikipedia.org</a></li>
+    <li>Bayraktar TB2. Википедия. <a href="https://ru.wikipedia.org/wiki/Bayraktar_TB2">ru.wikipedia.org</a></li>
+    <li>Фотографии: Wikimedia Commons. Источники, авторы и лицензии: <a href="https://commons.wikimedia.org/wiki/File:DJI_-_Drohne_Mavic_Air_2.JPG">DJI Mavic Air 2 — C. Stadler/Bwag, CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Orlan-10_on_the_launch_catapult.jpg">Орлан-10 — Минобороны РФ (Mil.ru), CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Bayraktar_TB2_Runway.jpg">Bayraktar TB2 — Bayhaluk, CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:THeMIS_5th_generation_UGV.jpg">THeMIS — Milrem Robotics, CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Saildrone_in_2019_NOAA_Arctic_mission.jpg">Saildrone — NOAA/Saildrone, общественное достояние</a>; <a href="https://commons.wikimedia.org/wiki/File:Ocean_Shield_deploys_the_Bluefin_21_underwater_vehicle.jpg">Bluefin-21 — U.S. Navy, Peter D. Blair, общественное достояние в США</a>.</li>
+    <li>THeMIS Unmanned Ground Vehicle. Army Technology. <a href="https://www.army-technology.com/projects/themis-hybrid-unmanned-ground-vehicle/">army-technology.com</a></li>
+    <li>Milrem Robotics. Википедия. <a href="https://ru.wikipedia.org/wiki/Milrem_Robotics">ru.wikipedia.org</a></li>
+    <li>Автономное судоходство (MASS). Международная морская организация (IMO). <a href="https://www.imo.org/ru/ourwork/safety/pages/autonomous-shipping-%28mass%29.aspx">imo.org</a></li>
+    <li>Saildrone Baja field campaign surface and ADCP measurements. NASA PO.DAAC / Data.gov. <a href="https://catalog.data.gov/dataset/saildrone-baja-field-campaign-surface-and-adcp-measurements-222cb">catalog.data.gov</a></li>
+    <li>Bluefin-21. Википедия. <a href="https://ru.wikipedia.org/wiki/Bluefin-21">ru.wikipedia.org</a></li>
+    <li>Bluefin-21, технические данные. GEOMATCHING. <a href="https://geo-matching.com/products/bluefin-21">geo-matching.com</a></li>
+    <li>Соловьёв С. В. Классификация и типология беспилотных летательных аппаратов в контексте обеспечения общественной безопасности // Вестник Санкт-Петербургского университета МВД России. 2025. № 2 (106). С. 80–91. <a href="https://vestnikspbmvd.ru/ru/storage/download/213192">vestnikspbmvd.ru</a></li>
+    <li>Развитие морских робототехнических комплексов гражданского назначения в России и мире. Часть вторая: мировой опыт разработки и производства МРТК гражданского назначения, использующих безэкипажные катера. Крыловский государственный научный центр // Морская наука и техника. 2026. № 26. <a href="https://marine.org.ru/upload/iblock/665/aniq946t3vokh0i759flx0wct4qy0vqg.pdf">marine.org.ru</a></li>
+    <li>Беспилотный летательный аппарат. Википедия. <a href="https://ru.wikipedia.org/wiki/Беспилотный_летательный_аппарат">ru.wikipedia.org</a></li>
+  </ol>
+</section>
+</main>
+<footer>Творческое задание по дисциплине «Защита и действия человека в условиях ЧС»<br>Орлова Алена Александровна, ису: 409280</footer>
+<script src="script.js"></script>
+</body>
+</html>
